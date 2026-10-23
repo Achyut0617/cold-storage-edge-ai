@@ -1,0 +1,68 @@
+{
+  "dataset_rows": 6000,
+  "training_rows": 4800,
+  "testing_rows": 1200,
+  "features": [
+    "temperature_c",
+    "humidity_pct",
+    "excursion_minutes"
+  ],
+  "classes": [
+    "High Risk",
+    "Normal",
+    "Warning"
+  ],
+  "accuracy": 0.9975,
+  "macro_f1": 0.9951357335074872,
+  "classification_report": {
+    "High Risk": {
+      "precision": 1.0,
+      "recall": 0.9811320754716981,
+      "f1-score": 0.9904761904761905,
+      "support": 53.0
+    },
+    "Normal": {
+      "precision": 1.0,
+      "recall": 0.9973190348525469,
+      "f1-score": 0.9986577181208054,
+      "support": 746.0
+    },
+    "Warning": {
+      "precision": 0.9925742574257426,
+      "recall": 1.0,
+      "f1-score": 0.9962732919254659,
+      "support": 401.0
+    },
+    "accuracy": 0.9975,
+    "macro avg": {
+      "precision": 0.9975247524752474,
+      "recall": 0.9928170367747483,
+      "f1-score": 0.9951357335074872,
+      "support": 1200.0
+    },
+    "weighted avg": {
+      "precision": 0.9975185643564356,
+      "recall": 0.9975,
+      "f1-score": 0.9974995715628924,
+      "support": 1200.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      52,
+      0,
+      1
+    ],
+    [
+      0,
+      744,
+      2
+    ],
+    [
+      0,
+      0,
+      401
+    ]
+  ],
+  "note": "Synthetic demonstration data; results do not establish real-world food-safety performance."
+}
